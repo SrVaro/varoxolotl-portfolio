@@ -17,11 +17,22 @@ module.exports = {
 				'poppins': ['Poppins', 'sans-serif']
 			  },
 			  keyframes: {
+				"scroll-indicator": {
+					"0%": {
+						opacity: "0",
+					},
+					"50%": {
+						opacity: "0",
+					},
+					"100%": {
+						opacity: "1",
+					}
+				},
 				"slide-in-blurred-bottom": {
 					"0%": {
 						transform: "translateX(-200%)",
 						filter: "blur(5px)",
-					  	opacity: "0"
+						opacity: "0"
 					},
 					"100%": {
 						transform: "translateX(0)",
@@ -45,17 +56,28 @@ module.exports = {
 				}
 				},
 				animation: {
-				  "slide-in-blurred-bottom-0": "slide-in-blurred-bottom 0.7s cubic-bezier(.06,.18,.7,1.04) forwards",
-				  "slide-in-blurred-bottom-1": "slide-in-blurred-bottom 0.9s cubic-bezier(.06,.18,.7,1.04) forwards",
-
-				  "fade-in-down": "fade-in-down linear forwards",
+					"slide-in-blurred-bottom-0": "slide-in-blurred-bottom 0.7s cubic-bezier(.06,.18,.7,1.04) forwards",
+					"slide-in-blurred-bottom-1": "slide-in-blurred-bottom 0.9s cubic-bezier(.06,.18,.7,1.04) forwards",
+					"scroll-indicator": "scroll-indicator 0.5s linear forwards",
+					"fade-in-down": "fade-in-down linear forwards",
 				},
 			  supports: {
 				"no-scroll-driven-animations": "not(animation-timeline: scroll())"
 			  }
 		}
 	},
-	plugins: []
+	plugins: [ 
+		plugin(function({ addUtilities }) {
+		addUtilities({
+			'.no-scrollbar::-webkit-scrollbar': {
+				'display': 'none',
+			},
+			'.no-scrollbar': {
+				'-ms-overflow-style': 'none', 
+				'scrollbar-width': 'none'
+			}
+		})
+	  })]
 }
 
 

@@ -4,12 +4,12 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Varoxolotl - Portfolio">
   <section>
-    <header class="h-screen overflow-clip grid grid-cols-1 gap-y-5 bg-background items-center">
+    <main class="h-screen overflow-clip grid grid-cols-1 gap-y-5 bg-background items-center">
       <div
-        class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none mx-auto h-auto max-w-7x1"
+        class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none mx-auto backdrop-filter"
       >
         <h1
-          class="will-change-transform animate-slide-in-blurred-bottom-0 max-w-xl text-7xl text-text font-poppins font-bold"
+          class="animate-slide-in-blurred-bottom-0 max-w-xl text-7xl text-text font-poppins font-bold"
         >
           Hi! My name is Varoxolotl!
         </h1>
@@ -20,7 +20,37 @@ import Layout from "../layouts/Layout.astro";
           Full-Stack Developer
         </h2>
       </div>
-    </header>
+
+      
+      <h3 id="scroll-emoji" class="animate-bounce absolute bottom-1 place-self-center text-3xl opacity-0">
+        👇
+      </h3>
+
+      <script>      
+        function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        sleep(1000).then(() => { fadeIn() });
+
+        var opacity = 0; 
+        var intervalID = 0; 
+          
+        function fadeIn() { 
+            var fade = document.getElementById("scroll-emoji"); 
+            var opacity = 0; 
+            var intervalID = setInterval(function() { 
+                if (opacity < 1) { 
+                    opacity = opacity + 0.2
+                    fade.style.opacity = opacity; 
+                } else { 
+                    clearInterval(intervalID); 
+
+                } 
+            }, 200); 
+        } 
+      </script>
+    </main>
   </section>
 
   <section>
