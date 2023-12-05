@@ -1,82 +1,78 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import myImage from "../assets/remote_work.png";
 ---
 
 <Layout title="Varoxolotl - Portfolio">
-  <section>
-    <main class="h-screen overflow-clip grid grid-cols-1 gap-y-5 bg-background items-center">
-      <div
-        class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none mx-auto backdrop-filter"
-      >
-        <h1
-          class="animate-slide-in-blurred-bottom-0 max-w-xl text-7xl text-text font-poppins font-bold"
-        >
-          Hi! My name is Varoxolotl!
-        </h1>
+  <section class="h-screen overflow-clip flex bg-hero bg-cover">
+    <main class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none ml-24 my-auto w-full">
+      <header class="animate-slide-in-blurred-bottom-0 font-poppins w-[800px]">
+        <h1 class="text-Thistle text-7xl font-bold">Hi! My name is</h1>
 
-        <h2
-          class="animate-slide-in-blurred-bottom-1 max-w-7x1 text-3xl text-accent font-poppins font-bold"
-        >
-          Full-Stack Developer
+        <h1 class="text-Heliotrope text-7xl font-bold">Varoxolotl</h1>
+      </header>
+
+      <footer class="animate-slide-in-blurred-bottom-1 max-w-7x1">
+        <h2 class="text-3xl font-[100px] leading-[1.5] whitespace-nowrap overflow-hidden relative h-[50px]">
+          <div class="block overflow-hidden absolute pl-[0.5rem] font-poppins font-bold italic text-Byzantine animate-openclose">
+            <div
+              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block">
+              Full-Stack Developer
+            </div>
+            <div
+              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block">
+              Game Developer
+            </div>
+            <div
+              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block">
+              Tech Enthusiast
+            </div>
+          </div>
         </h2>
-      </div>
-
-      
-      <h3 id="scroll-emoji" class="animate-bounce absolute bottom-1 place-self-center text-3xl opacity-0">
-        👇
-      </h3>
-
-      <script>      
-        function sleep(ms) {
-          return new Promise(resolve => setTimeout(resolve, ms));
-        }
-
-        sleep(1000).then(() => { fadeIn() });
-
-        var opacity = 0; 
-        var intervalID = 0; 
-          
-        function fadeIn() { 
-            var fade = document.getElementById("scroll-emoji"); 
-            var opacity = 0; 
-            var intervalID = setInterval(function() { 
-                if (opacity < 1) { 
-                    opacity = opacity + 0.2
-                    fade.style.opacity = opacity; 
-                } else { 
-                    clearInterval(intervalID); 
-
-                } 
-            }, 200); 
-        } 
-      </script>
+      </footer>
     </main>
+    <aside class="h-[300px] w-full self-end ml-24"> 
+      <ol class="h-full"> 
+        <li class="flex">
+          <figure>
+            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"/> 
+            <div class="w-5 h-5 rounded-full bg-Veronica"/>
+          </figure>
+          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey"> Start/> </p>
+        </li>
+        <div class="h-full w-1 ml-2 bg-Veronica"> 
+        </div>
+      </ol>
+    </aside>
   </section>
 
-  <section>
-    <header class="h-screen overflow-clip grid grid-cols-1 gap-y-5 bg-secondary items-center">
-      <div
-        class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none mx-auto h-auto max-w-7x1"
-      >
-        <h1 class="max-w-xl text-7xl text-text font-poppins font-bold">
-          Hi! My name is Varoxolotl!
-        </h1>
-        <p class="max-w-7x1 text-3xl text-accent font-poppins font-bold">Full-Stack Developer</p>
-      </div>
-    </header>
-  </section>
-
-  <section>
-    <header class="h-screen overflow-clip grid grid-cols-1 gap-y-5 bg-secondary items-center">
-      <div
-        class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none mx-auto h-auto max-w-7x1"
-      >
-        <h1 class="max-w-xl text-7xl text-text font-poppins font-bold">
-          Hi! My name is Varoxolotl!
-        </h1>
-        <p class="max-w-7x1 text-3xl text-accent font-poppins font-bold">Full-Stack Developer</p>
-      </div>
-    </header>
+  <section class="h-screen overflow-clip flex bg-background">
+    <main class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none ml-24 w-full">
+        <article class="w-[800px] mt-40 h-96 rounded-3xl  bg-Byzantine bg-remote-work bg-cover">
+        </article>
+     
+    </main>
+    <aside class="h-[300px] w-full ml-24"> 
+      <ol class="h-full mr-[77.5px]"> 
+        <li class="h-[75px] w-1 ml-2 bg-Veronica"/>
+        <li class="flex">
+          <figure>
+            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"/> 
+            <div class="w-5 h-5 rounded-full bg-Veronica"/>
+          </figure>
+          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey"> Projects/> </p>
+        </li>
+        <li class="h-full w-1 ml-2 bg-Veronica"/>
+        <li class="flex">
+          <figure>
+            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"/> 
+            <div class="w-5 h-5 rounded-full bg-Veronica"/>
+          </figure>
+          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey"> Remote Work </p>
+        </li>
+      </ol>
+    </aside>
   </section>
 </Layout>
 
