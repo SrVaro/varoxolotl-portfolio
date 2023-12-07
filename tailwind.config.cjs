@@ -9,8 +9,10 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				'hero': "url('/public/hero-bg.svg')",
+				'flat': "url('/public/flat-bg.svg')",
 				'hero-rotated': "url('/public/hero-rotated-bg.svg')",
-				'remote-work': "url('/src/assets/remote_work.png')"
+				'remote-work': "url('/src/assets/remote_work.png')",
+
 			},
 			colors: {
 				'darkGrey': '#4110C9',

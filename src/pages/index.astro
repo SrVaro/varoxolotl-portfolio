@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import myImage from "../assets/remote_work.png";
 ---
 
 <Layout title="Varoxolotl - Portfolio">
   <section class="h-screen overflow-clip flex bg-hero bg-cover">
-    <main class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none ml-24 my-auto w-full">
+    <main
+      class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none ml-24 my-auto w-full"
+    >
       <header class="animate-slide-in-blurred-bottom-0 font-poppins w-[800px]">
         <h1 class="text-Thistle text-7xl font-bold">Hi! My name is</h1>
 
@@ -14,62 +16,86 @@ import myImage from "../assets/remote_work.png";
       </header>
 
       <footer class="animate-slide-in-blurred-bottom-1 max-w-7x1">
-        <h2 class="text-3xl font-[100px] leading-[1.5] whitespace-nowrap overflow-hidden relative h-[50px]">
-          <div class="block overflow-hidden absolute pl-[0.5rem] font-poppins font-bold italic text-Byzantine animate-openclose">
+        <h2
+          class="text-3xl font-[100px] leading-[1.5] whitespace-nowrap overflow-hidden relative h-[50px]"
+        >
+          <div
+            class="block overflow-hidden absolute pl-[0.5rem] font-poppins font-bold italic text-Byzantine animate-openclose"
+          >
             <div
-              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block">
+              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block"
+            >
               Full-Stack Developer
             </div>
             <div
-              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block">
+              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block"
+            >
               Game Developer
             </div>
             <div
-              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block">
+              class="after:ml-1 after:animate-cursor-blink after:w-[5px] after:h-[23px] after:bg-Byzantine after:rounded-xl after:inline-block"
+            >
               Tech Enthusiast
+
+              <svg>
+                <filter id="gooey">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10"></feGaussianBlur>
+                  <feColorMatrix
+                    values="
+                      1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 20 -10
+                      "
+                  ></feColorMatrix>
+                </filter>
+              </svg>
             </div>
           </div>
         </h2>
       </footer>
     </main>
-    <aside class="h-[300px] w-full self-end ml-24"> 
-      <ol class="h-full"> 
+    <aside class="h-[300px] w-full self-end ml-24">
+      <ol class="h-full">
         <li class="flex">
           <figure>
-            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"/> 
-            <div class="w-5 h-5 rounded-full bg-Veronica"/>
+            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"></div>
+            <div class="w-5 h-5 rounded-full bg-Veronica"></div>
           </figure>
-          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey"> Start/> </p>
+          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey">Start/></p>
         </li>
-        <div class="h-full w-1 ml-2 bg-Veronica"> 
-        </div>
+        <div class="h-full w-1 ml-2 bg-Veronica"></div>
       </ol>
     </aside>
   </section>
 
   <section class="h-screen overflow-clip flex bg-background">
-    <main class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none ml-24 w-full">
-        <article class="w-[800px] mt-40 h-96 rounded-3xl  bg-Byzantine bg-remote-work bg-cover">
-        </article>
-     
+    <main
+      class="animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none ml-24 w-full"
+    >
+      <article class="w-[800px] mt-40 h-96 rounded-3xl bg-Byzantine bg-remote-work bg-cover">
+        <div class="w-full h-full backdrop-blur-sm bg-white/30 ...">
+          <!-- ... -->
+        </div>
+      </article>
     </main>
-    <aside class="h-[300px] w-full ml-24"> 
-      <ol class="h-full mr-[77.5px]"> 
-        <li class="h-[75px] w-1 ml-2 bg-Veronica"/>
+    <aside class="h-[300px] w-full ml-24">
+      <ol class="h-full mr-[77.5px]">
+        <li class="h-[75px] w-1 ml-2 bg-Veronica"></li>
         <li class="flex">
           <figure>
-            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"/> 
-            <div class="w-5 h-5 rounded-full bg-Veronica"/>
+            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"></div>
+            <div class="w-5 h-5 rounded-full bg-Veronica"></div>
           </figure>
-          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey"> Projects/> </p>
+          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey">Projects/></p>
         </li>
-        <li class="h-full w-1 ml-2 bg-Veronica"/>
+        <li class="h-full w-1 ml-2 bg-Veronica"></li>
         <li class="flex">
           <figure>
-            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"/> 
-            <div class="w-5 h-5 rounded-full bg-Veronica"/>
+            <div class="animate-ping w-5 h-5 absolute rounded-full bg-Veronica"></div>
+            <div class="w-5 h-5 rounded-full bg-Veronica"></div>
           </figure>
-          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey"> Remote Work </p>
+          <p class="ml-2 -mt-5 font-poppins font-bold text-darkGrey">Remote Work</p>
         </li>
       </ol>
     </aside>
