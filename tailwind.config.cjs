@@ -7,20 +7,20 @@ module.exports = {
 	mode: 'jit',
 	theme: {
 		extend: {
+			colors: {
+				'contrastAccent': '#3C0CC7',
+				'accent':'#6228D3',
+				'primary':'#A155E4',
+				'secondary':'#756CF0',
+				'lightAccent':'#F190FC',
+				'background':'#E9CCFE',
+			},
 			backgroundImage: {
 				'hero': "url('/public/hero-bg.svg')",
 				'flat': "url('/public/flat-bg.svg')",
 				'hero-rotated': "url('/public/hero-rotated-bg.svg')",
 				'remote-work': "url('/src/assets/remote_work.png')",
 
-			},
-			colors: {
-				'darkGrey': '#4110C9',
-				'Heliotrope':'#FB87FD',
-				'Byzantine':'#9E99FF',
-				'Veronica':'#973EE1',
-				'Thistle':'#B476FB',
-				'background':'#E7CCFD',
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif']
@@ -127,7 +127,15 @@ module.exports = {
 					  top: "-0.1rem",
 					  width: "0"
 					}
-				  }
+				},
+				"article-background": {
+					from: { transform: "rotate(0deg) translateX(150px) rotate(0deg);" },
+					to:   { transform: "rotate(360deg) translateX(150px) rotate(-360deg);" }
+				},
+				"article-background2": {
+					from: { transform: "rotate(0deg) translateX(-150px) rotate(0deg);" },
+					to:   { transform: "rotate(-360deg) translateX(-150px) rotate(360deg);" }
+				}
 				},
 				animation: {
 					"slide-in-blurred-bottom-0": "slide-in-blurred-bottom 0.7s cubic-bezier(.06,.18,.7,1.04) forwards",
@@ -135,7 +143,10 @@ module.exports = {
 					"scroll-indicator": "scroll-indicator 0.5s linear forwards",
 					"fade-in-down": "fade-in-down linear forwards",
 					"cursor-blink": "cursor-blink 1s steps(2) infinite",
-					"openclose": "openclose 10s steps(30) infinite;"
+					"openclose": "openclose 10s steps(30) infinite",
+					"article-background-slow": "article-background 20s linear infinite",
+					"article-background-normal": "article-background2 15s linear infinite",
+					"article-background-fast": "article-background 10s linear infinite"
 				},
 			  supports: {
 				"no-scroll-driven-animations": "not(animation-timeline: scroll())"
@@ -143,16 +154,17 @@ module.exports = {
 		}
 	},
 	plugins: [ 
+		require('@tailwindcss/container-queries'),
 		plugin(function({ addUtilities }) {
-		addUtilities({
-			'.no-scrollbar::-webkit-scrollbar': {
-				'display': 'none',
-			},
-			'.no-scrollbar': {
-				'-ms-overflow-style': 'none', 
-				'scrollbar-width': 'none'
-			}
-		})
+			addUtilities({
+				'.no-scrollbar::-webkit-scrollbar': {
+					'display': 'none',
+				},
+				'.no-scrollbar': {
+					'-ms-overflow-style': 'none', 
+					'scrollbar-width': 'none'
+				}
+			})
 	  })]
 }
 

@@ -1,0 +1,141 @@
+---
+import { Image } from 'astro:assets'
+import itch_banner from '/public/images/itchio-badge.png'
+const { title, description } = Astro.props
+---
+
+<article class="group flex h-1/2 w-1/3">
+    <div
+        class="super-vibes orienta z-40 mr-4 inline-block rotate-180 bg-gradient-to-t from-primary to-accent bg-clip-text text-center text-xl text-transparent transition duration-[1.5s] [writing-mode:vertical-rl] group-hover:-translate-x-7 group-hover:rotate-[170deg] group-hover:scale-125 group-hover:duration-[1.5s]">
+        {title}
+    </div>
+    <div class="flex h-full w-full">
+        <div
+            class="absolute h-1/2 w-1/3 origin-bottom-left rounded-3xl duration-[1.5s] group-hover:-rotate-6 group-hover:transition group-hover:duration-[1.5s]">
+            <svg
+                width="412"
+                height="267"
+                viewBox="0 0 412 267"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="background-shadow absolute h-full w-full -mt-2">
+                <path
+                    d="M334.015 70.1701C364.912 84.8277 393.678 111.324 405.752 147.123C417.827 183.203 413.565 228.868 382.668 247.472C351.772 266.076 294.24 257.337 233.512 259.874C172.784 262.411 108.859 275.941 67.6635 257.337C26.1127 239.015 6.93541 188.277 1.60838 133.311C-4.07378 78.0627 4.09432 18.8682 45.6451 3.92862C87.1959 -10.7291 161.774 19.1501 215.755 35.7809C269.735 52.1298 303.118 55.5124 334.015 70.1701Z"
+                    fill="url(#Gradient4)"></path>
+                <defs>
+                    <linearGradient
+                        id="paint0_linear_99_89"
+                        x1="206"
+                        y1="0"
+                        x2="206"
+                        y2="267"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F190FC"></stop>
+                        <stop offset="1" stop-color="#F6AAFF"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div
+            class="absolute h-1/2 w-1/3 origin-bottom-left rounded-3xl duration-[1.5s] group-hover:-rotate-3 group-hover:transition group-hover:duration-[1.5s]">
+            <svg
+                class="background-shadow absolute h-full w-full"
+                width="764"
+                height="537"
+                viewBox="0 0 764 537"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M293.112 47.345C369.752 42.3962 415.918 5.0341 473.966 0.612817C532.014 -3.80847 601.471 24.438 663.217 80.2402C724.963 136.042 779.255 218.956 759.766 280.018C741.007 340.909 649.198 379.777 574.375 429.638C500.281 479.327 443.647 540.282 387.085 536.67C330.522 533.058 273.773 465.322 205.244 410.346C137.188 355.642 57.1349 312.98 21.3441 246.083C-14.1901 178.741 -5.24567 87.8813 52.3115 55.9107C110.085 24.6577 216.728 51.8492 293.112 47.345Z"
+                    fill="url(#Gradient3)"></path>
+                <linearGradient id="Gradient2" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#6228D3"></stop>
+                    <stop offset="100%" stop-color="#A155E4"></stop>
+                </linearGradient>
+                <linearGradient id="Gradient3" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#756CF0"></stop>
+                    <stop offset="100%" stop-color="#B476FB"></stop>
+                </linearGradient>
+                <linearGradient id="Gradient4" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#F190FC"></stop>
+                    <stop offset="100%" stop-color="#F190FC"></stop>
+                </linearGradient>
+            </svg>
+        </div>
+        <div
+            class="absolute flex h-1/2 w-1/3 flex-col flex-wrap rounded-3xl [image-rendering:pixelated]">
+            <svg
+                width="436"
+                height="272"
+                viewBox="0 0 436 272"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="background-shadow absolute h-full w-full">
+                <path
+                    d="M304.883 1.92658C348.603 5.87497 401.102 18.1064 420 48.5917C438.968 79.3382 443.397 146.628 420 182.5C396.602 218.372 377.878 235.651 345.313 246.628C312.54 257.941 245.292 246.366 202.352 254.247C159.203 262.465 105.276 280.572 68.5054 265.801C31.8051 251.29 12.3314 204.162 4.12932 152.329C-4.07282 100.496 -0.93358 44.2209 32.1032 19.3992C65.0702 -5.68362 128.213 0.61253 177.08 1.50002C225.947 2.38751 260.886 -1.94712 304.883 1.92658Z"
+                    fill="url(#paint0_linear_99_91)"></path>
+                <defs>
+                    <linearGradient
+                        id="paint0_linear_99_91"
+                        x1="179.236"
+                        y1="-25.6196"
+                        x2="258.564"
+                        y2="270.054"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6228D3"></stop>
+                        <stop offset="1" stop-color="#A155E4"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="gif-animation ml-8 h-full w-[40%] z-40">
+                <img
+                    class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
+                    src="src/assets/remote_work_anim_0.png"
+                />
+                <img
+                    class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:duration-[1.5s]"
+                    src="src/assets/remote_work_anim.webp"
+                />
+            </div>
+            <div class="z-40 flex h-full w-1/2">
+                <div class="my-auto h-1/2 w-auto">
+                    <div
+                        class="nimbus-sans w-[90%] text-center text-sm font-bold text-background">
+                        {description}
+                        <Image
+                            src={itch_banner}
+                            class="relative mx-auto mt-12"
+                            width="150"
+                            height="100"
+                            alt="Banner Itch.io"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+    .background-shadow {
+        filter: drop-shadow(2px 2px 5px #454545);
+    }
+
+    .clip-circle {
+        clip-path: inset(
+            0 0 0 round 24px
+        ); /* OLD VALUE example: circle(245px, 140px, 50px); */
+        /* Yep, even the new clip-path has deprecated stuff. */
+    }
+
+    .gif-animation {
+        display: grid;
+        align-items: center;
+
+        & > * {
+            grid-row: 1;
+            grid-column: 1;
+        }
+    }
+</style>
