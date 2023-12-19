@@ -128,13 +128,24 @@ module.exports = {
 					  width: "0"
 					}
 				},
-				"article-background": {
-					from: { transform: "rotate(0deg) translateX(150px) rotate(0deg);" },
-					to:   { transform: "rotate(360deg) translateX(150px) rotate(-360deg);" }
+				"timeline": {
+					"0%": {
+						"stroke-dashoffset": "0.8"
+					},
+					"100%": {
+						"stroke-dashoffset": "2.4"
+					}
 				},
-				"article-background2": {
-					from: { transform: "rotate(0deg) translateX(-150px) rotate(0deg);" },
-					to:   { transform: "rotate(-360deg) translateX(-150px) rotate(360deg);" }
+				"cards-appears": {
+					"0%": {
+						opacity: "0"
+					},
+					"25%": {
+						opacity: "0"
+					},
+					"50%": {
+						opacity: "1"
+					}
 				}
 				},
 				animation: {
@@ -144,9 +155,8 @@ module.exports = {
 					"fade-in-down": "fade-in-down linear forwards",
 					"cursor-blink": "cursor-blink 1s steps(2) infinite",
 					"openclose": "openclose 10s steps(30) infinite",
-					"article-background-slow": "article-background 20s linear infinite",
-					"article-background-normal": "article-background2 15s linear infinite",
-					"article-background-fast": "article-background 10s linear infinite"
+					"timeline": "timeline 5s linear forwards",
+					"cards-appears": "cards-appears 10s linear forwards"
 				},
 			  supports: {
 				"no-scroll-driven-animations": "not(animation-timeline: scroll())"

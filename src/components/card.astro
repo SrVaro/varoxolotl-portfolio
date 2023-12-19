@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets'
-import itch_banner from '/public/images/itchio-badge.png'
+import itch_banner from '/src/assets/itchio-badge.webp'
 const { title, description } = Astro.props
 ---
 
-<article class="group flex h-1/2 w-1/3">
+<article class="group flex h-1/2 w-1/3 animate-cards-appears [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none">
     <div
-        class="super-vibes orienta z-40 mr-4 inline-block rotate-180 bg-gradient-to-t from-primary to-accent bg-clip-text text-center text-xl text-transparent transition duration-[1.5s] [writing-mode:vertical-rl] group-hover:-translate-x-7 group-hover:rotate-[170deg] group-hover:scale-125 group-hover:duration-[1.5s]">
+        class="super-vibes orienta z-40 mr-1 inline-block rotate-180 bg-gradient-to-t from-primary to-accent bg-clip-text text-center text-xl text-transparent transition duration-[1.5s] [writing-mode:vertical-rl] group-hover:-translate-x-7 group-hover:rotate-[170deg] group-hover:scale-125 group-hover:duration-[1.5s]">
         {title}
     </div>
     <div class="flex h-full w-full">
@@ -18,7 +18,7 @@ const { title, description } = Astro.props
                 viewBox="0 0 412 267"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="background-shadow absolute h-full w-full -mt-2">
+                class="background-shadow absolute -mt-2 h-full w-full">
                 <path
                     d="M334.015 70.1701C364.912 84.8277 393.678 111.324 405.752 147.123C417.827 183.203 413.565 228.868 382.668 247.472C351.772 266.076 294.24 257.337 233.512 259.874C172.784 262.411 108.859 275.941 67.6635 257.337C26.1127 239.015 6.93541 188.277 1.60838 133.311C-4.07378 78.0627 4.09432 18.8682 45.6451 3.92862C87.1959 -10.7291 161.774 19.1501 215.755 35.7809C269.735 52.1298 303.118 55.5124 334.015 70.1701Z"
                     fill="url(#Gradient4)"></path>
@@ -88,16 +88,7 @@ const { title, description } = Astro.props
                 </defs>
             </svg>
 
-            <div class="gif-animation ml-8 h-full w-[40%] z-40">
-                <img
-                    class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
-                    src="src/assets/remote_work_anim_0.png"
-                />
-                <img
-                    class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:duration-[1.5s]"
-                    src="src/assets/remote_work_anim.webp"
-                />
-            </div>
+            <slot />
             <div class="z-40 flex h-full w-1/2">
                 <div class="my-auto h-1/2 w-auto">
                     <div
@@ -108,7 +99,7 @@ const { title, description } = Astro.props
                             class="relative mx-auto mt-12"
                             width="150"
                             height="100"
-                            alt="Banner Itch.io"
+                            alt="Banner for Itch.io"
                         />
                     </div>
                 </div>
@@ -127,15 +118,5 @@ const { title, description } = Astro.props
             0 0 0 round 24px
         ); /* OLD VALUE example: circle(245px, 140px, 50px); */
         /* Yep, even the new clip-path has deprecated stuff. */
-    }
-
-    .gif-animation {
-        display: grid;
-        align-items: center;
-
-        & > * {
-            grid-row: 1;
-            grid-column: 1;
-        }
     }
 </style>
