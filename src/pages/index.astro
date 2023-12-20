@@ -106,21 +106,22 @@ import Card from '../components/card.astro'
 
     <section class="flex h-screen">
         <main
-            class="mx-auto my-auto w-full animate-fade-in-down [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none">
-            <header class="mx-auto w-[550px] animate-slide-in-blurred-bottom-0">
+            class="mx-auto my-auto w-full animate-fade-in-down flex-col items-center [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none">
+            <header
+                class="mx-auto w-[40%] animate-slide-in-blurred-bottom-0 flex-col text-6xl">
                 <h1
-                    class="super-vibes inline-block h-[65px] bg-gradient-to-tr from-primary to-primary bg-clip-text text-6xl text-transparent">
+                    class="super-vibes h-1/4 bg-gradient-to-tr from-primary to-primary bg-clip-text text-transparent">
                     Hi! My name is
                 </h1>
 
                 <h1
-                    class="super-vibes inline-block bg-gradient-to-b from-accent to-contrastAccent bg-clip-text text-6xl text-transparent">
+                    class="super-vibes bg-gradient-to-b from-accent to-contrastAccent bg-clip-text text-transparent">
                     Varoxolotl
                 </h1>
             </header>
 
             <footer
-                class="max-w-7x1 mx-auto w-[550px] animate-slide-in-blurred-bottom-1">
+                class="max-w-7x1 mx-auto w-[40%] animate-slide-in-blurred-bottom-1">
                 <h2
                     class="relative h-[50px] overflow-hidden whitespace-nowrap text-3xl font-[100px] leading-[1.5]">
                     <div
@@ -144,7 +145,6 @@ import Card from '../components/card.astro'
     </section>
 
     <svg
-
         viewBox="0 0 691 1537"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -154,8 +154,8 @@ import Card from '../components/card.astro'
             stroke="url(#paint0_linear_54_55)"
             stroke-width="20"
             stroke-linecap="round"
-            class="path animate-timeline [animation-timeline:view()]  supports-no-scroll-driven-animations:animate-none"
-            pathLength="1"/>
+            class="path animate-timeline [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none"
+            pathLength="1"></path>
         <path
             d="M499.229 20.5681C509.695 27.7403 518.833 35.9751 525.049 46.0694C531.265 56.2168 534.452 68.2237 534.24 80.1243C534.027 92.078 530.309 103.819 524.146 114.02C518.036 124.22 509.376 132.88 499.176 139.521C488.975 146.215 477.234 150.997 464.696 152.272C452.158 153.6 438.876 151.422 428.835 144.674C418.74 137.927 411.887 126.558 405.511 115.029C399.136 103.554 393.239 91.9186 392.176 79.6993C391.114 67.4268 394.939 54.623 401.474 43.413C408.062 32.2031 417.359 22.6401 428.463 15.8928C439.566 9.0925 452.529 5.10791 464.802 6.17047C477.128 7.28615 488.816 13.3958 499.229 20.5681Z"
             fill="url(#paint1_linear_54_55)"></path>
@@ -188,66 +188,66 @@ import Card from '../components/card.astro'
 
     <section class="flex h-screen">
         <main class="flex h-screen w-full">
-            <div class="ml-20 mt-10 h-full w-1/2 flex-row flex-wrap">
+            <div class="ml-[5%] mt-10 h-full w-1/2 flex-row flex-wrap">
                 <Card
                     title="Remote Work"
                     description="Web based game made in Godot Engine that started as a prototype to learn the engine.">
-                    <div class="gif-animation z-40 ml-8 h-full w-[40%]">
+                    <div class="gif-animation z-40 ml-8 h-full w-[50%]">
                         <Image
                             src="/src/assets/remote_work_anim_0.png"
                             alt="Cover for Remote Work project"
-                            width="192"
-                            height="192"
-                            class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
+                            width="292"
+                            height="292"
+                            class="w-[80%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
                         />
                         <Image
                             src="/src/assets/remote_work_anim.webp"
                             alt="Animated cover for Remote Work project"
-                            width="192"
-                            height="192"
-                            class="h-[51%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
+                            width="292"
+                            height="292"
+                            class="w-[80%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
                         />
                     </div>
                 </Card>
                 <Card
                     title="Pseudoku green city"
                     description="First game project finished. Winner of the first edition of the JamToday Córdoba. ">
-                    <div class="gif-animation z-40 ml-8 h-full w-[40%]">
+                    <div class="gif-animation z-40 ml-8 h-full w-[50%]">
                         <Image
                             src="/src/assets/Pseudoku-green-city-removebg-preview.png"
                             alt="Cover for Remote Work project"
                             width="192"
                             height="192"
-                            class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
+                            class="w-[80%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
                         />
                         <Image
                             src="/src/assets/Pseudoku-green-city-removebg-preview.png"
                             alt="Animated cover for Remote Work project"
                             width="192"
                             height="192"
-                            class="h-[51%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
+                            class="w-[80%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
                         />
                     </div>
                 </Card>
             </div>
-            <div class="ml-44 mt-10 flex h-full w-1/2 items-center">
+            <div class="ml-[15%] mt-10 flex h-full w-1/2 items-center">
                 <Card
                     title="Code Game"
                     description="Web based game in Unity made as final project for higher school">
-                    <div class="gif-animation z-40 ml-8 h-full w-[40%]">
+                    <div class="gif-animation z-40 ml-8 h-full w-[50%]">
                         <Image
                             src="/src/assets/code-game.png"
                             alt="Cover for Remote Work project"
-                            width="192"
-                            height="192"
-                            class="h-[51%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
+                            width="255"
+                            height="254"
+                            class="w-[80%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
                         />
                         <Image
                             src="/src/assets/code-game.png"
                             alt="Animated cover for Remote Work project"
-                            width="192"
-                            height="192"
-                            class="h-[51%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
+                            width="255"
+                            height="254"
+                            class="w-[80%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
                         />
                     </div>
                 </Card>
@@ -255,36 +255,29 @@ import Card from '../components/card.astro'
         </main>
     </section>
 
-    <div class="absolute w-full">
+    <div class="relative mt-[30%] w-full">
         <svg
-            width="1461"
-            height="696"
-            viewBox="0 0 1461 696"
+            width="1456"
+            height="286"
+            viewBox="0 0 1456 286"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class="h-full w-full">
-            <g clip-path="url(#clip0_58_53)">
-                <path
-                    d="M0 410.64L34.9017 419.688C69.8033 428.852 139.607 446.948 209.085 464.58C278.726 482.212 347.88 499.148 417.521 496.48C487 493.812 556.803 471.308 626.282 454.952C695.923 438.48 765.077 428.04 834.718 438.132C904.197 448.108 974 478.732 1043.48 478.268C1113.12 477.92 1182.27 446.6 1251.91 440.568C1321.39 434.652 1391.2 453.908 1426.1 463.652L1461 473.28V697.16H1426.1C1391.2 697.16 1321.39 697.16 1251.91 697.16C1182.27 697.16 1113.12 697.16 1043.48 697.16C974 697.16 904.197 697.16 834.718 697.16C765.077 697.16 695.923 697.16 626.282 697.16C556.803 697.16 487 697.16 417.521 697.16C347.88 697.16 278.726 697.16 209.085 697.16C139.607 697.16 69.8033 697.16 34.9017 697.16H0V410.64Z"
-                    fill="#F190FC"></path>
-                <path
-                    d="M0 502.28L34.9017 495.552C69.8033 488.708 139.607 475.252 209.085 477.572C278.726 479.892 347.88 497.988 417.521 509.588C487 521.188 556.803 526.292 626.282 533.02C695.923 539.748 765.077 548.332 834.718 547.288C904.197 546.36 974 535.92 1043.48 521.652C1113.12 507.268 1182.27 489.172 1251.91 481.4C1321.39 473.628 1391.2 476.412 1426.1 477.688L1461 479.08V697.16H1426.1C1391.2 697.16 1321.39 697.16 1251.91 697.16C1182.27 697.16 1113.12 697.16 1043.48 697.16C974 697.16 904.197 697.16 834.718 697.16C765.077 697.16 695.923 697.16 626.282 697.16C556.803 697.16 487 697.16 417.521 697.16C347.88 697.16 278.726 697.16 209.085 697.16C139.607 697.16 69.8033 697.16 34.9017 697.16H0V502.28Z"
-                    fill="#DF80F5"></path>
-                <path
-                    d="M0 578.84L34.9017 574.78C69.8033 570.72 139.607 562.6 209.085 563.412C278.726 564.108 347.88 573.852 417.521 575.128C487 576.52 556.803 569.56 626.282 561.44C695.923 553.32 765.077 544.04 834.718 537.66C904.197 531.28 974 527.8 1043.48 530.352C1113.12 532.788 1182.27 541.372 1251.91 539.168C1321.39 537.08 1391.2 524.32 1426.1 517.94L1461 511.56V697.16H1426.1C1391.2 697.16 1321.39 697.16 1251.91 697.16C1182.27 697.16 1113.12 697.16 1043.48 697.16C974 697.16 904.197 697.16 834.718 697.16C765.077 697.16 695.923 697.16 626.282 697.16C556.803 697.16 487 697.16 417.521 697.16C347.88 697.16 278.726 697.16 209.085 697.16C139.607 697.16 69.8033 697.16 34.9017 697.16H0V578.84Z"
-                    fill="#CC71EF"></path>
-                <path
-                    d="M0 567.24L34.9017 576.288C69.8033 585.452 139.607 603.548 209.085 611.088C278.726 618.628 347.88 615.612 417.521 614.22C487 612.828 556.803 613.292 626.282 607.608C695.923 602.04 765.077 590.44 834.718 583.712C904.197 576.868 974 575.012 1043.48 582.9C1113.12 590.788 1182.27 608.652 1251.91 617.12C1321.39 625.588 1391.2 624.892 1426.1 624.428L1461 624.08V697.16H1426.1C1391.2 697.16 1321.39 697.16 1251.91 697.16C1182.27 697.16 1113.12 697.16 1043.48 697.16C974 697.16 904.197 697.16 834.718 697.16C765.077 697.16 695.923 697.16 626.282 697.16C556.803 697.16 487 697.16 417.521 697.16C347.88 697.16 278.726 697.16 209.085 697.16C139.607 697.16 69.8033 697.16 34.9017 697.16H0V567.24Z"
-                    fill="#B763E9"></path>
-                <path
-                    d="M0 664.68L34.9017 659.228C69.8033 653.892 139.607 642.988 209.085 639.508C278.726 636.028 347.88 639.972 417.521 645.192C487 650.412 556.803 656.908 626.282 656.328C695.923 655.748 765.077 648.092 834.718 641.712C904.197 635.332 974 630.228 1043.48 630.692C1113.12 631.04 1182.27 636.84 1251.91 640.668C1321.39 644.612 1391.2 646.468 1426.1 647.512L1461 648.44V697.16H1426.1C1391.2 697.16 1321.39 697.16 1251.91 697.16C1182.27 697.16 1113.12 697.16 1043.48 697.16C974 697.16 904.197 697.16 834.718 697.16C765.077 697.16 695.923 697.16 626.282 697.16C556.803 697.16 487 697.16 417.521 697.16C347.88 697.16 278.726 697.16 209.085 697.16C139.607 697.16 69.8033 697.16 34.9017 697.16H0V664.68Z"
-                    fill="#A155E4"></path>
-            </g>
-            <defs>
-                <clipPath id="clip0_58_53">
-                    <rect width="1461" height="696" fill="white"></rect>
-                </clipPath>
-            </defs>
+            <path
+                d="M-3 0.640137L31.9017 9.68811C66.8033 18.8521 136.607 36.9481 206.085 54.5801C275.726 72.2121 344.88 89.1481 414.521 86.4801C484 83.8121 553.803 61.3081 623.282 44.9521C692.923 28.4801 762.077 18.0401 831.718 28.1321C901.197 38.1081 971 68.7321 1040.48 68.2681C1110.12 67.9201 1179.27 36.6001 1248.91 30.5681C1318.39 24.6521 1388.2 43.9081 1423.1 53.6521L1458 63.2801V287.16H1423.1C1388.2 287.16 1318.39 287.16 1248.91 287.16C1179.27 287.16 1110.12 287.16 1040.48 287.16C971 287.16 901.197 287.16 831.718 287.16C762.077 287.16 692.923 287.16 623.282 287.16C553.803 287.16 484 287.16 414.521 287.16C344.88 287.16 275.726 287.16 206.085 287.16C136.607 287.16 66.8033 287.16 31.9017 287.16H-3V0.640137Z"
+                fill="#F190FC"></path>
+            <path
+                d="M-3 92.2802L31.9017 85.5522C66.8033 78.7082 136.607 65.2522 206.085 67.5722C275.726 69.8922 344.88 87.9882 414.521 99.5882C484 111.188 553.803 116.292 623.282 123.02C692.923 129.748 762.077 138.332 831.718 137.288C901.197 136.36 971 125.92 1040.48 111.652C1110.12 97.2682 1179.27 79.1722 1248.91 71.4002C1318.39 63.6282 1388.2 66.4122 1423.1 67.6882L1458 69.0802V287.16H1423.1C1388.2 287.16 1318.39 287.16 1248.91 287.16C1179.27 287.16 1110.12 287.16 1040.48 287.16C971 287.16 901.197 287.16 831.718 287.16C762.077 287.16 692.923 287.16 623.282 287.16C553.803 287.16 484 287.16 414.521 287.16C344.88 287.16 275.726 287.16 206.085 287.16C136.607 287.16 66.8033 287.16 31.9017 287.16H-3V92.2802Z"
+                fill="#DF80F5"></path>
+            <path
+                d="M-3 168.84L31.9017 164.78C66.8033 160.72 136.607 152.6 206.085 153.412C275.726 154.108 344.88 163.852 414.521 165.128C484 166.52 553.803 159.56 623.282 151.44C692.923 143.32 762.077 134.04 831.718 127.66C901.197 121.28 971 117.8 1040.48 120.352C1110.12 122.788 1179.27 131.372 1248.91 129.168C1318.39 127.08 1388.2 114.32 1423.1 107.94L1458 101.56V287.16H1423.1C1388.2 287.16 1318.39 287.16 1248.91 287.16C1179.27 287.16 1110.12 287.16 1040.48 287.16C971 287.16 901.197 287.16 831.718 287.16C762.077 287.16 692.923 287.16 623.282 287.16C553.803 287.16 484 287.16 414.521 287.16C344.88 287.16 275.726 287.16 206.085 287.16C136.607 287.16 66.8033 287.16 31.9017 287.16H-3V168.84Z"
+                fill="#CC71EF"></path>
+            <path
+                d="M-3 157.24L31.9017 166.288C66.8033 175.452 136.607 193.548 206.085 201.088C275.726 208.628 344.88 205.612 414.521 204.22C484 202.828 553.803 203.292 623.282 197.608C692.923 192.04 762.077 180.44 831.718 173.712C901.197 166.868 971 165.012 1040.48 172.9C1110.12 180.788 1179.27 198.652 1248.91 207.12C1318.39 215.588 1388.2 214.892 1423.1 214.428L1458 214.08V287.16H1423.1C1388.2 287.16 1318.39 287.16 1248.91 287.16C1179.27 287.16 1110.12 287.16 1040.48 287.16C971 287.16 901.197 287.16 831.718 287.16C762.077 287.16 692.923 287.16 623.282 287.16C553.803 287.16 484 287.16 414.521 287.16C344.88 287.16 275.726 287.16 206.085 287.16C136.607 287.16 66.8033 287.16 31.9017 287.16H-3V157.24Z"
+                fill="#B763E9"></path>
+            <path
+                d="M-3 254.68L31.9017 249.228C66.8033 243.892 136.607 232.988 206.085 229.508C275.726 226.028 344.88 229.972 414.521 235.192C484 240.412 553.803 246.908 623.282 246.328C692.923 245.748 762.077 238.092 831.718 231.712C901.197 225.332 971 220.228 1040.48 220.692C1110.12 221.04 1179.27 226.84 1248.91 230.668C1318.39 234.612 1388.2 236.468 1423.1 237.512L1458 238.44V287.16H1423.1C1388.2 287.16 1318.39 287.16 1248.91 287.16C1179.27 287.16 1110.12 287.16 1040.48 287.16C971 287.16 901.197 287.16 831.718 287.16C762.077 287.16 692.923 287.16 623.282 287.16C553.803 287.16 484 287.16 414.521 287.16C344.88 287.16 275.726 287.16 206.085 287.16C136.607 287.16 66.8033 287.16 31.9017 287.16H-3V254.68Z"
+                fill="#A155E4"></path>
         </svg>
     </div>
 </Layout>
@@ -345,9 +338,8 @@ import Card from '../components/card.astro'
     }
 
     html {
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-
 </style>
 
 <style></style>
