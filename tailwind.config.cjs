@@ -71,61 +71,61 @@ module.exports = {
 				},
 				"openclose": {
 					"0%": {
-					  top: "-0.1rem",
-					  width: "0"
+					  top: "0",
+					  width: "0%",
 					},
 					"5%": {
-					  width: "0"
+						width: "0%",
 					},
 					"15%": {
-					  width: "600px"
+					  width: "100%"
 					},
 					"30%": {
-					  top: "-0.1rem",
-					  width: "600px"
+					  top: "0",
+					  width: "100%"
 					},
 					"33%": {
-					  top: "-0.1rem",
-					  width: "0"
+					  top: "0",
+					  width: "0%",
 					},
 					"35%": {
-					  top: "-0.1rem",
-					  width: "0"
+					  top: "0",
+					  width: "0%",
 					},
 					"36%": {
-					  top: "-3rem"
+						top: "-100%",
 					},
 					"48%": {
-					  top: "-3rem",
-					  width: "475px"
+					  top: "-100%",
+					  width: "100%"
 					},
 					"62%": {
-					  top: "-3rem",
-					  width: "475px"
+					  top: "-100%",
+					  width: "100%"
 					},
 					"66%": {
-					  top: "-3rem",
-					  width: "0",
+					  top: "-100%",
+					  width: "0%",
 					},
 					"71%": {
-					  top: "-5.9rem",
-					  width: "0"
+					  top: "-200%",
+					  width: "0%",
 					},
 					"86%": {
-					  top: "-5.9rem",
-					  width: "485px"
+						top: "-200%",
+						width: "100%"
 					},
 					"95%": {
-					  top: "-5.9rem",
-					  width: "485px"
+						top: "-200%",
+						width: "100%"
 					},
 					"98%": {
-					  top: "-5.9rem",
-					  width: "0",
+						top: "-200%",
+						width: "0%",
 					},
 					"100%": {
-					  top: "-0.1rem",
-					  width: "0"
+					  top: "0",
+					  width: "0%",
 					}
 				},
 				"timeline": {

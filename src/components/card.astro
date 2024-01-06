@@ -5,19 +5,18 @@ const { title, description } = Astro.props
 ---
 
 <article
-    class="group mt-[25%] flex h-1/2 w-[80%] animate-cards-appears [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none">
+    class="group flex h-full w-full animate-cards-appears [animation-timeline:view()] supports-no-scroll-driven-animations:animate-none">
     <div
-        class="super-vibes orienta z-40 mr-3 inline-block rotate-180 bg-gradient-to-t from-primary to-accent bg-clip-text text-center text-xl text-transparent transition duration-[1.5s] [writing-mode:vertical-rl] group-hover:-translate-x-7 group-hover:rotate-[170deg] group-hover:scale-125 group-hover:duration-[1.5s] xl:text-2xl 2xl:text-4xl">
+        class="super-vibes orienta z-40 mr-3 inline-block rotate-180 bg-gradient-to-t from-primary to-accent bg-clip-text text-center text-xl text-transparent transition duration-[1.5s] [writing-mode:vertical-rl] group-hover:rotate-[170deg] group-hover:duration-[1.5s] xl:text-2xl xl:group-hover:-translate-x-7 xl:group-hover:scale-125 2xl:text-4xl">
         {title}
     </div>
-    <div class="flex h-full w-full">
-        <div
-            class="absolute h-1/2 w-1/3 origin-bottom-left rounded-3xl duration-[1.5s] group-hover:-rotate-6 group-hover:transition group-hover:duration-[1.5s]">
+    <div class="gif-animation w-full">
+        <div class="w-full">
             <svg
                 viewBox="0 0 412 267"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="background-shadow absolute -mt-2 h-full w-full">
+                class="background-shadow origin-bottom-left rounded-3xl duration-[1.5s] group-hover:-rotate-6 group-hover:transition group-hover:duration-[1.5s]">
                 <path
                     d="M334.015 70.1701C364.912 84.8277 393.678 111.324 405.752 147.123C417.827 183.203 413.565 228.868 382.668 247.472C351.772 266.076 294.24 257.337 233.512 259.874C172.784 262.411 108.859 275.941 67.6635 257.337C26.1127 239.015 6.93541 188.277 1.60838 133.311C-4.07378 78.0627 4.09432 18.8682 45.6451 3.92862C87.1959 -10.7291 161.774 19.1501 215.755 35.7809C269.735 52.1298 303.118 55.5124 334.015 70.1701Z"
                     fill="url(#Gradient4)"></path>
@@ -35,10 +34,10 @@ const { title, description } = Astro.props
                 </defs>
             </svg>
         </div>
-        <div
-            class="absolute h-1/2 w-1/3 origin-bottom-left rounded-3xl duration-[1.5s] group-hover:-rotate-3 group-hover:transition group-hover:duration-[1.5s]">
+
+        <div class="w-full">
             <svg
-                class="background-shadow absolute h-full w-full"
+                class="background-shadow origin-bottom-left rounded-3xl duration-[1.5s] group-hover:-rotate-3 group-hover:transition group-hover:duration-[1.5s]"
                 viewBox="0 0 764 537"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -59,12 +58,13 @@ const { title, description } = Astro.props
                 </linearGradient>
             </svg>
         </div>
-        <div class="absolute h-1/2 w-1/3">
+
+        <div class="w-full">
             <svg
                 viewBox="0 0 436 272"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="background-shadow absolute h-full w-full">
+                class="background-shadow">
                 <path
                     d="M304.883 1.92658C348.603 5.87497 401.102 18.1064 420 48.5917C438.968 79.3382 443.397 146.628 420 182.5C396.602 218.372 377.878 235.651 345.313 246.628C312.54 257.941 245.292 246.366 202.352 254.247C159.203 262.465 105.276 280.572 68.5054 265.801C31.8051 251.29 12.3314 204.162 4.12932 152.329C-4.07282 100.496 -0.93358 44.2209 32.1032 19.3992C65.0702 -5.68362 128.213 0.61253 177.08 1.50002C225.947 2.38751 260.886 -1.94712 304.883 1.92658Z"
                     fill="url(#paint0_linear_99_91)"></path>
@@ -83,7 +83,7 @@ const { title, description } = Astro.props
             </svg>
         </div>
         <div
-            class="absolute flex h-1/2 w-1/3 flex-col flex-wrap rounded-3xl [image-rendering:pixelated]">
+            class="flex h-full w-full flex-col flex-wrap rounded-3xl [image-rendering:pixelated]">
             <slot />
             <div class="z-40 flex h-full w-1/2">
                 <div class="my-auto h-1/3 w-auto">
