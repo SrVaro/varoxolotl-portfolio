@@ -1,10 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import { Image } from 'astro:assets'
+import MainLayout from '../layouts/MainLayout.astro'
 import Card from '../components/card.astro'
 ---
 
-<Layout title="Varoxolotl - Portfolio">
+<MainLayout title="Varoxolotl - Portfolio">
     <svg
         width="354"
         height="699"
@@ -225,75 +224,39 @@ import Card from '../components/card.astro'
         </defs>
     </svg>
 
-    <section class="">
+    <section>
         <div
             class="mx-auto h-[350px] w-[90%] flex-row flex-wrap xl:ml-16 xl:h-[350px] xl:w-1/3 2xl:ml-36 2xl:h-[550px] 2xl:w-1/3">
             <Card
                 title="Remote Work"
-                description="Web based game made in Godot Engine that started as a prototype to learn the engine.">
-                <div class="gif-animation z-40 ml-3 h-full w-1/2">
-                    <img
-                        src="/varoxolotl-portfolio/assets/remote_work_anim_0.png"
-                        alt="Cover for Remote Work project"
-                        width="292"
-                        height="292"
-                        class="w-[80%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
-                    />
-                    <img
-                        src="/varoxolotl-portfolio/assets/remote_work_anim.webp"
-                        alt="Animated cover for Remote Work project"
-                        width="292"
-                        height="292"
-                        class="w-[80%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
-                    />
-                </div>
-            </Card>
+                description="Web based game made in Godot Engine that started as a prototype to learn the engine."
+                id="remote-work"
+                image_src="remote_work_anim_0.png"
+                gif_src="remote_work_anim.webp"
+                image_alt="Cover Image for Remote Work project"
+            />
         </div>
         <div
             class="mx-auto h-[350px] w-[90%] flex-row flex-wrap xl:mr-16 xl:h-[350px] xl:w-1/3 2xl:mr-36 2xl:h-[550px] 2xl:w-1/3">
             <Card
                 title="Code Game"
-                description="Web based game in Unity made as final project for higher school">
-                <div class="gif-animation z-40 ml-3 h-full w-1/2">
-                    <img
-                        src="/varoxolotl-portfolio/assets/code-game.png"
-                        alt="Cover for Remote Work project"
-                        width="255"
-                        height="254"
-                        class="w-[80%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
-                    />
-                    <img
-                        src="/varoxolotl-portfolio/assets/code-game.png"
-                        alt="Animated cover for Remote Work project"
-                        width="255"
-                        height="254"
-                        class="w-[80%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
-                    />
-                </div>
-            </Card>
+                description="Web based game in Unity made as final project for higher school"
+                id="code-game"
+                image_src="code-game.png"
+                gif_src="code-game.png"
+                image_alt="Cover Image for Code Game project"
+            />
         </div>
         <div
             class="mx-auto h-[350px] w-[90%] flex-row flex-wrap xl:ml-16 xl:h-[350px] xl:w-1/3 2xl:ml-36 2xl:h-[550px] 2xl:w-1/3">
             <Card
                 title="Pseudoku green city"
-                description="First game project finished. Winner of the first edition of the JamToday Córdoba. ">
-                <div class="gif-animation z-40 ml-3 h-full w-1/2">
-                    <img
-                        src="/varoxolotl-portfolio/assets/Pseudoku-green-city-removebg-preview.png"
-                        alt="Cover for Remote Work project"
-                        width="192"
-                        height="192"
-                        class="w-[80%] duration-[1.5s] group-hover:scale-110 group-hover:opacity-0 group-hover:duration-[1.5s]"
-                    />
-                    <img
-                        src="/varoxolotl-portfolio/assets/Pseudoku-green-city-removebg-preview.png"
-                        alt="Animated cover for Remote Work project"
-                        width="192"
-                        height="192"
-                        class="w-[80%] opacity-0 duration-[1.5s] group-hover:scale-110 group-hover:opacity-100 group-hover:duration-[1.5s]"
-                    />
-                </div>
-            </Card>
+                description="First game project finished. Winner of the first edition of the JamToday Córdoba."
+                id="pseodoku-green-city"
+                image_src="Pseudoku-green-city-removebg-preview.png"
+                gif_src="Pseudoku-green-city-removebg-preview.png"
+                image_alt="Cover Image for Pseudoku green city project"
+            />
         </div>
     </section>
 
@@ -348,7 +311,7 @@ import Card from '../components/card.astro'
                 fill="#A155E4"></path>
         </svg>
     </div>
-</Layout>
+</MainLayout>
 
 <style is:global>
     @font-face {
