@@ -111,7 +111,8 @@ const { title, description, date, category, author, image } = frontmatter
             </defs>
         </svg>
 
-        <div class="mx-auto w-1/2 bg-primary/10 p-16 backdrop-blur-xl">
+        <div
+            class="nw-full mx-auto h-screen bg-primary/10 p-16 backdrop-blur-xl 2xl:w-1/2">
             <header class="">
                 <h1
                     class="super-vibes bg-gradient-to-tr from-primary to-accent bg-clip-text text-6xl text-transparent">
@@ -125,7 +126,7 @@ const { title, description, date, category, author, image } = frontmatter
                     class="mx-auto w-1/2 [image-rendering:pixelated]"
                 />
             </header>
-            <main class="nimbus-sans text-2xl">
+            <main class="h-full">
                 <slot />
             </main>
         </div>

@@ -146,6 +146,14 @@ module.exports = {
 					"50%": {
 						opacity: "1"
 					}
+				},
+				"job-card-expand": {
+					"0%": {
+						transform: "translateX(0)",
+					},
+					"100%": {
+						transform: "translateX(100px)",
+					}
 				}
 				},
 				animation: {
@@ -156,7 +164,8 @@ module.exports = {
 					"cursor-blink": "cursor-blink 1s steps(2) infinite",
 					"openclose": "openclose 10s steps(30) infinite",
 					"timeline": "timeline 5s linear forwards",
-					"cards-appears": "cards-appears 10s linear forwards"
+					"cards-appears": "cards-appears 10s linear forwards",
+					"job-card-expand": "job-card-expand 5s linear forwards"
 				},
 			  supports: {
 				"no-scroll-driven-animations": "not(animation-timeline: scroll())"
